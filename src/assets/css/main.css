@@ -2,7 +2,7 @@
   --nav-grey: #171a21;
   --bg-blue: #1b2838;
   --dark-blue: #101822;
-  --header-grey: #35404d;
+  --header-grey: #515e6d;
   --text-blue: #67c1f5;
 }
 
@@ -26,3 +26,4 @@ html, body {
   border-radius: 3px;
   border: 0;
 }
+

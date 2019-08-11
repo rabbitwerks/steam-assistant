@@ -1,22 +1,20 @@
 <template>
   <div id="app" class="fxbx fd-c">
-    <div class="header fxbx a-ctr">
-      <img src="./assets/img/Steam_icon_logo.svg" alt="steam logo">
-      <div class="header--inner f1 fxbx spc-bt a-ctr">
-        <h2 class="text-heading">STEAM ASSISTANT</h2>
-        <button class="btn">
-          Assist!
-        </button>
-      </div>
-    </div>
-    <div class="content f1"></div>
+    <Header />
+    <ContentPanel />
   </div>
 </template>
 
 <script>
+import Header from './components/header/Header.vue';
+import ContentPanel from './components/content-panel/ContentPanel.vue';
 
 export default {
   name: 'app',
+  components: {
+    Header,
+    ContentPanel
+  }
 };
 </script>
 
@@ -30,7 +28,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-blue);
-  color: #2c3e50;
+  color: #ddd;
 }
 .header {
   height: 6rem;
