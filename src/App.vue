@@ -1,19 +1,19 @@
 <template>
   <div id="app" class="fxbx fd-c">
     <Header />
-    <ContentPanel />
+    <ContentWrapper />
   </div>
 </template>
 
 <script>
 import Header from './components/header/Header.vue';
-import ContentPanel from './components/content-panel/ContentPanel.vue';
+import ContentWrapper from './components/content/ContentWrapper.vue';
 
 export default {
   name: 'app',
   components: {
     Header,
-    ContentPanel
+    ContentWrapper
   }
 };
 </script>

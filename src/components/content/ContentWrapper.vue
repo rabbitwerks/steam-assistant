@@ -3,15 +3,19 @@
     <div class="content--header fxbx a-ctr">
       <h3>{{ greetingText }}</h3>
     </div>
-    <div class="content--inner">
-    </div>
+    <ContentPanel />
   </div>
 </template>
 
 <script>
 import { value, computed } from 'vue-function-api';
 
+import ContentPanel from './ContentPanel.vue';
+
 export default {
+  components: {
+    ContentPanel
+  },
   setup() {
     const greetingText = value('Welcome! Let\'s grab some Steam stats!');
     return {
@@ -35,8 +39,5 @@ export default {
 .content--header h3 {
   font-weight: 300;
 }
-.content--inner {
-  height: 60vh;
-  background-color: var(--dark-blue);
-}
+
 </style>
