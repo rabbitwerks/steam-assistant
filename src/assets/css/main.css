@@ -1,0 +1,28 @@
+:root {
+  --nav-grey: #171a21;
+  --bg-blue: #1b2838;
+  --dark-blue: #101822;
+  --header-grey: #35404d;
+  --text-blue: #67c1f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 20px;
+}
+
+.text-heading {
+  color: var(--text-blue);
+}
+
+.btn {
+  padding: .25rem 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: 0;
+}
