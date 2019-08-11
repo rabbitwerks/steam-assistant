@@ -5,6 +5,8 @@ import store from './store';
 
 Vue.use(plugin);
 
+require('dotenv').config();
+
 Vue.config.productionTip = false;
 
 new Vue({
